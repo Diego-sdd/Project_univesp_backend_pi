@@ -1,6 +1,7 @@
 const express = require('express');
 const cors = require('cors')
 require = require('esm')(module)
+import 'dotenv/config';
 
 //const bodyParse = require('body-parser');
 
@@ -14,4 +15,4 @@ app.use(express.urlencoded({ extended: false}))
 require('./routes/v1')(app);
 
 
-app.listen(3333)
+app.listen(process.env.PORT || 3333)
