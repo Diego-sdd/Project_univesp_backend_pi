@@ -1,0 +1,36 @@
+
+body {
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(233, 235, 235);
+    padding: 2rem;
+}
+
+.title_doc {
+    border: 1.5px solid rgb(39, 39, 39);
+}
+
+.grid_view {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 0.8rem;
+}
+
+.grid_view_2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 0.8rem;
+}
+
+.grid_view_5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-top: 0.8rem;
+}
+
+#text_bold {
+    font-weight: bold;
+}
+p{
+    font-size: 12px;
+}

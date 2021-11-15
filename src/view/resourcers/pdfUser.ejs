@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+    <style>
+        body {
+            text-align: center;
+            justify-content: center;
+            background-color: rgb(236, 236, 236);
+            padding: 2rem;
+        }
+
+        .title_doc {
+            border: 1px solid rgb(39, 39, 39);
+        }
+
+        .grid_view {
+            margin-top: 0.3rem;
+        }
+
+        #text_bold {
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 10px;
+            margin: 2px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="title_doc row">
+        <p id="text_bold">INSTRUÇÃO NORMATIVA INSS/PRES</p>
+        <p id="text_bold">INSTRUÇÃO NORMATIVA INSS/PRES </p>
+        <p id="text_bold"> PERFIL PROFISSIOGRAFICO PREVIDÊNCIÁRIO - P P P</p>
+    </div>
+
+    <div class="title_doc row" style="margin-top: 0.8rem;">
+        <p id="text_bold">I - SEÇÃO DE DADOS ADMINISTRATIVOS</p>
+    </div>
+
+    <div class="grid_view row">
+        <div class="title_doc col-xs-4">
+            <p id="text_bold">1 - CNPJ do Domicílio Tributário / CEI</p>
+            <p><%= cnpj %></p>
+        </div>
+        <div class="title_doc col-xs-4">
+            <p id="text_bold">2 - Nome Empresarial</p>
+            <p><%= nameCompany %></p>
+        </div>
+        <div class="title_doc col-xs-4">
+            <p id="text_bold">3 - CNAE</p>
+            <p><%= CNAE %></p>
+        </div>
+    </div>
+    <div class="grid_view row">
+        <div class="title_doc col-xs-4">
+            <p id="text_bold">4 - Nome do Trabalhador</p>
+            <p><%= nameEmployee %></p>
+        </div>
+        <div class="title_doc col-xs-4">
+            <p id="text_bold">5 - BR / PDH</p>
+            <p>NA</p>
+        </div>
+        <div class="title_doc col-xs-4">
+            <p id="text_bold">6- NIT (PIS/ PASEP/CI)</p>
+            <p><%= PIS %></p>
+        </div>
+
+    </div>
+
+    <p id="text_bold" style="margin-top: 0.8rem;">12 - C A T - COMUNICAÇÃO DE ACIDENTE DO TRABALHO REGISTRADA</p>
+
+    <div class="grid_view row">
+        <div class="title_doc col-xs-4">
+            <p id="text_bold">12.1 - Data do Registro</p>
+            <p>NA</p>
+        </div>
+        <div class="title_doc col-xs-4">
+            <p id="text_bold">12.2 - Número da CAT</p>
+            <p>NA</p>
+        </div>
+        <div class="title_doc col-xs-4">
+            <p id="text_bold">12.1 - Data do Registro</p>
+            <p>NA</p>
+        </div>
+    </div>
+
+    <p id="text_bold" style="margin-top: 0.8rem;">13 - LOTAÇÃO E ATRIBUIÇÃO</p>
+
+    <div class="grid_view row">
+        <div class="title_doc col-xs-3">
+            <p id="text_bold">13.1 - Período</p>
+            <p>02/08/2006 A</p>
+        </div>
+        <div class="title_doc col-xs-3">
+            <p id="text_bold">13.2 - CNPJ / CEI</p>
+            <p>02.790.893/0002-22</p>
+        </div>
+        <div class="title_doc col-xs-3">
+            <p id="text_bold">13.3 - Setor</p>
+            <p>MANUTENÇÃO</p>
+        </div>
+        <div class="title_doc col-xs-3">
+            <p id="text_bold">13.4 - Cargo</p>
+            <p><%= office %></p>
+        </div>
+    </div>
+
+    <div class="grid_view row title_doc">
+        <div class=" col-xs-6">
+            <p id="text_bold">14.1 - Período</p>
+            <p>02/08/2006 A</p>
+        </div>
+        <div class=" col-xs-6">
+            <p id="text_bold">14.2 - Descricão das atividades</p>
+            <p><%= activity %></p>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="title_doc" style="margin-top: 0.8rem;">
+            <p id="text_bold">II - SEÇÃO DE REGISTROS AMBIENTAIS</p>
+        </div>
+
+        <div class="title_doc" style="margin-top: 0.8rem;">
+            <p id="text_bold">15 - EXPOSIÇÃO A FATORES DE RISCOS</p>
+        </div>
+
+
+        <div class="title_doc" style="margin-top: 0.8rem;">
+            <p id="text_bold">IV - RESPONSÁVEL PELAS INFORMAÇÕES</p>
+        </div>
+        <p style="border: 1.5px solid rgb(39, 39, 39); padding: 20px;">
+            Declaramos, para todos os fins de direito, que as informações prestadas
+            neste documento são verídicas e foram transcritas fielmente dos registros administrativos,
+            das demonstrações ambientais e dos programas médicos de responsabilidade da empresa. É de nosso
+            conhecimento que a prestação de informações falsa neste documento constitui crime de falsidade de
+            documento público, nos termos do Artigo 297 do Código Penal e, também, que tais informações são
+            de caráter privativo do trabalhador, constituindo crime, nos termos da Lei no 9.029/95, práticas
+            discriminatórias
+            decorrentes de sua exigibilidade por outrem, bem como de sua divulgação para terceiros, ressalvados
+            quando exigida pelos órgãos públicos competentes.
+        </p>
+    </div>
+    <div class="row">
+        <div class="title_doc  col-xs-6" style="-webkit-user-modify: read-write-plaintext-only;">
+            <p id="text_bold">19 - Data de Emissão do PPP</p>
+            <p>07/07/2015</p>
+        </div>
+        <div class="title_doc  col-xs-6" style="-webkit-user-modify: read-write-plaintext-only;">
+            <p id="text_bold">__________________________________________________________________</p>
+            <p>Carimbo e Assinatura</p>
+        </div>
+    </div>
+</body>
+
+</html>
