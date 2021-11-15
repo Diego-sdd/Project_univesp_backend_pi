@@ -1,7 +1,6 @@
 const express = require('express');
 const cors = require('cors')
 require = require('esm')(module)
-import 'dotenv/config';
 
 //const bodyParse = require('body-parser');
 
